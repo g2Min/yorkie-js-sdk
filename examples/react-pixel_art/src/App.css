@@ -5,6 +5,38 @@
   text-align: center;
 }
 
+/* App 컨테이너 스타일 */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 가운데 정렬 */
+  justify-content: center;
+  min-height: 100vh; /* 화면 전체를 차지하도록 설정 */
+  min-width: 100vw;
+  background-color: #f0f0f0; /* 전체 배경색 설정 */
+}
+
+
+/* 그리드 컨테이너 스타일 */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(16, 20px); /* 그리드의 열을 16개로 설정 */
+  gap: 2px; /* 각 픽셀 간격 */
+  margin: 20px auto; /* 가운데 정렬을 위해 추가 */
+  width: fit-content; /* 그리드 크기를 콘텐츠에 맞춤 */
+  background-color: #ccc; /* 그리드 배경색 설정 */
+  padding: 5px; /* 그리드 패딩 */
+}
+
+/* 픽셀 스타일 */
+.pixel {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border: 1px solid #ddd; /* 픽셀 테두리 */
+}
+
+
 .logo {
   height: 6em;
   padding: 1.5em;
